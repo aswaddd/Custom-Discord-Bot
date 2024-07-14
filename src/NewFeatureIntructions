@@ -1,0 +1,11 @@
+Hi :)
+
+I made a jokesBot as a new feature.
+
+Please go to the 25th line of myFirstBot and uncomment ", new jokesBot()".
+
+To make it work, please take the jokes.csv file out of this src and place it in the project folder with the other csv files.
+
+Use /jokes on discord to call this bot.
+
+Hope you guys enjoy the jokes ~
