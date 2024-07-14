@@ -1,8 +1,6 @@
 package tools;
 
-/**
- * This class is given. You do not need to change it.
- */
+
 public class TextPair implements Comparable<TextPair> {
     private String name;
     private String value;

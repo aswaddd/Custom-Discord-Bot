@@ -13,42 +13,19 @@ import java.util.List;
 
 import tools.*;
 
-/**
- * This class is done for you. You cannot change this file.
- *
- * A CommandBot handle discord commands (conversation from user that starts with the symbol '/').
- * All bot that handle commands should inherit from this class.
- */
 public abstract class CommandBot extends AbstractBot {
-    /**
-     * To store the options avaliable for the command. The options can only be text options.
-     */
+
     protected List<OptionData> options = new ArrayList<OptionData>();
     private boolean ephemeral;
 
-    /**
-     * This method is used to respond to a command.
-     */
     protected abstract String respond(Command command);
-    /**
-     * What command that this bot is listening to.
-     */
     protected abstract String getCommand();
-    /**
-     * The short description for this command.
-     */
     protected abstract String getCommandHelp();
 
-    /**
-     * The constructor of the CommandBot class.
-     */
     public CommandBot() {
         this.ephemeral = false;
     }
 
-    /**
-     * To convert the options from the discord format to the format that we use in this program.
-     */
     private static List<TextPair> convertOptions(List<OptionMapping> options) {
         List<TextPair> result = new ArrayList<TextPair>();
         for (OptionMapping o : options) {
@@ -57,12 +34,6 @@ public abstract class CommandBot extends AbstractBot {
         return result;
     }
 
-    /**
-     * You don't call and change this method.
-     *
-     * This method is written for you. You cannot modify this method.
-     * You are not suppose to understand the details and usage of this method.
-     */
     @Override
     public final void onSlashCommandInteraction(SlashCommandInteractionEvent event) {
         if (event.getUser().isBot()) return;
@@ -90,12 +61,6 @@ public abstract class CommandBot extends AbstractBot {
     }
 
 
-    /**
-     * You don't call and change this method.
-     *
-     * This method is written for you. You cannot modify this method.
-     * You are not suppose to understand the details and usage of this method.
-     */
 
     public final CommandData getCommands() {
         SlashCommandData c = Commands.slash(getCommand(), getCommandHelp());

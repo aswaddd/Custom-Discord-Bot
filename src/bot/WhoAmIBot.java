@@ -3,14 +3,6 @@ package bot;
 import tools.Command;
 import tools.IDNotFoundException;
 
-/**
- * This bot handle the command '/whoami'.
- * When a user ask about his name, this bot will reply the user with his Student Name.
- * If the user has not yet registered, the bot will reply that the user has not registered.
- *
- * Unlike other bot that will report their status every time actionPerform is called,
- * this bot will report its status only once per 5 times actionPerform is called.
- */
 public class WhoAmIBot extends CommandBot {
     private final UserManagementBot userManagementBot;
     private int count = 0;

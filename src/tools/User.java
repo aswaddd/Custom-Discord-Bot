@@ -1,15 +1,6 @@
 package tools;
 
-/**
- * This class is to store user information. A user has the following attributes (String):
- * - an ID (Discord id),
- * - a username (Discord username),
- * - a student ID (student number),
- * - a student name (student name),
- * - a registration code (a code that is used to register the user).
- *
- * This class should have suitable constructor and setter/getter methods.
- */
+
 public class User {
     private String id;
     private String username;

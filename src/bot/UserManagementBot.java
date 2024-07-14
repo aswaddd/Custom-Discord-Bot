@@ -7,27 +7,6 @@ import java.util.ArrayList;
 
 import tools.*;
 
-/**
- * This bot is to manage the registration of the user with the command '/registration'.
- * The user will be asked to provide a registration code. If the registration code is
- * correct, the user will be registered to the system.
- *
- * The user cannot register again if the user has already registered (One discord ID
- * to one student ID).
- *
- * We assume the registration code will be sent to students via email in advanced.
- * The registration information is given in a file (please check users.csv)
- *
- * The file format of users.csv is as follows:
- * Each row may have three columns or five columns.
- * Three Columns, e.g.:
- *      20100001,g8xa9s,Bruce Lee
- * That represents the student ID is 20100001, the registration code is g8xa9s, and the name is Bruce Lee.
- * Five Columns, e.g.:
- *      20100002,-,Chan Tai Man,1004553330619580487,Kevin Wang
- * That represents the student ID is 20100002, the registration code is empty (registered already),
- * the student name is Chan Tai Man, the discord ID is 1004553330619580487, and the discord name is Kevin Wang.
- */
 public class UserManagementBot extends CommandBot {
     //Add your data member here
     protected ArrayList<User> users;

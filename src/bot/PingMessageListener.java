@@ -1,17 +1,3 @@
-/**
- *
- *
- * You are asked to build a class called PingMessageListener that
- * implements MessageListener. This class handles a ping message.
- *
- * When user sends "ping", it replies "pong".
- *
- *
- * This class has been finished for you as an example.
- * Study this class and you should be good for other classes.
- *
- */
-
 package bot;  // need this line to indicate that you are in a package
 
 import tools.Message;  // need this line to import the Message class
